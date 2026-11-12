@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f2d3a">
+<title>Purchase Approvals - Pioneer Cranes</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #1f2d3a; color: #f3f6f8; font-family: Arial, sans-serif; }
+  .c { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 16px; text-align: center; padding: 20px; box-sizing: border-box; }
+  a { background: #f2b705; color: #241b00; padding: 12px 18px; text-decoration: none; font-weight: bold; border-radius: 7px; }
+</style>
+</head>
+<body>
+<script>var APP_URL = 'https://script.google.com/macros/s/AKfycbza0Nnf1zql93UpOT8UhH4Z-ygjOjdyqSoWYi_wUKCMqIHFNkDirg3vmhf0WNQUoZkJ/exec';</script>
+
+<div class="c">
+  <div>Opening Purchase approvals…</div>
+  <a id="go" href="#">Open Purchase approvals</a>
+</div>
+
+<script>
+  var url = APP_URL + '?page=management';
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+  document.getElementById('go').href = url;
+  setTimeout(function () { window.location.replace(url); }, 300);
+</script>
+</body>
+</html>
