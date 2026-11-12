@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1f2d3a">
-<title>Purchase Approvals - Pioneer Cranes</title>
+<title>Purchase Comparison - Pioneer Cranes</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -19,12 +19,12 @@
 <script>var APP_URL = 'PASTE_YOUR_EXEC_LINK_HERE';</script>
 
 <div class="c">
-  <div>Opening Purchase approvals…</div>
-  <a id="go" href="#">Open Purchase approvals</a>
+  <div>Opening Purchase comparison…</div>
+  <a id="go" href="#">Open Purchase comparison</a>
 </div>
 
 <script>
-  var url = APP_URL + '?page=management';
+  var url = APP_URL + '';
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
   document.getElementById('go').href = url;
   setTimeout(function () { window.location.replace(url); }, 300);   // go straight to the app (no iframe: safe with many Google accounts)

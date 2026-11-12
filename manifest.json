@@ -1,6 +1,6 @@
 {
-  "name": "Purchase Approvals - Pioneer Cranes",
-  "short_name": "Approvals",
+  "name": "Purchase Comparison - Pioneer Cranes",
+  "short_name": "Comparison",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#1f2d3a",
